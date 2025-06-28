@@ -1,0 +1,126 @@
+.home-wrapper {
+  background-color: #0d0b1f;
+  min-height: 100vh; /* Full viewport height */
+  width: 100vw;
+  padding: 0 2rem; /* Removed top/bottom padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card layout container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 70px;  /* ✅ Push cards below fixed navbar */
+  margin-bottom: 60px; /* ✅ Prevent touching the footer */
+}
+
+/* Card style */
+.card {
+  background-color: #111;
+  color: white;
+  flex: 1 1 450px;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+/* Left and right card types */
+.card-left {
+  border: 3px solid #f04e6b;
+  text-align: center;
+}
+
+.card-right {
+  border: 3px solid #4ec5f0;
+  text-align: left;
+}
+
+/* Profile image */
+.circle-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+
+/* Text styles */
+.name {
+  color: #e940c5;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.role {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.details-title {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.credit {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  color: #aaa;
+}
+
+/* 📱 Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-right {
+    text-align: center;
+  }
+
+  .circle-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .role {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .details-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-right p {
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+}
