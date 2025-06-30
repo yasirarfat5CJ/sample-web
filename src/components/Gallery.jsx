@@ -15,7 +15,7 @@ function Gallery() {
 <img src="/images/img6.jpg" alt="Gallery Pic 3" />
 <img src="/images/img7.jpg" alt="Gallery Pic 3" />
 <img src="/images/img8.jpg" alt="Gallery Pic 3" />
-<img src="/images/img9.jpg" alt="Gallery Pic 3" />
+
 <img src="/images/img19.jpg" alt="Gallery Pic 3" />
 <img src="/images/img20.jpg" alt="Gallery Pic 3" />
 <img src="/images/img10.jpeg" alt="Gallery Pic 3" />
